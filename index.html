@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FIT5147 Interactive Crime Map</title>
+
+    <link href="external/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="external/jQRangeSlider-5.7.2/css/iThing.css" type="text/css" />
+    <link rel="stylesheet" href="external/jquery.dayparts/css/jquery.dayparts.css" type="text/css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>FIT5147 Interactive Crime Map</h1>
+        </div>
+
+        <div class="row">
+		<div class="col-md-4">
+		<font color="purple"> <strong>Please select TYPE of crime</strong></font>
+                <div id="types"></div>
+            </div>
+			
+            <div class="col-md-8">
+			<font color="purple"> <strong>Please select time period(default all time period)</strong></font>
+				<div id="time_select"></div>
+                <div id="week_slider"></div>
+                <div id="map"></div>
+                <div id="year_slider"></div>
+            </div>      
+        </div>
+    </div>
+
+    <script src="external/jquery-1.12.1.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en" type="text/javascript"></script>
+    <script src="external/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script src="external/jQRangeSlider-5.7.2/jQRangeSlider-min.js"></script>
+    <script src="external/jQRangeSlider-5.7.2/jQDateRangeSlider-min.js"></script>
+    <script src="external/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="external/loading-overlay.min.js"></script>
+    <script src="external/pouchdb-5.2.1.min.js"></script>
+    <script src="external/jquery.dayparts/js/jquery.dayparts.js"></script>
+
+    <script src="js/piechart-clusterer.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/query.js"></script>
+    <script src="js/types.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
